@@ -29,7 +29,7 @@ Next, include the following in `~/systemd/on_start.sh`:
 #!/bin/bash
 source $HOME/miniconda3/etc/profile.d/conda.sh
 conda activate base
-# - output is not buffered (-u)
+# -u: unbuffered output
 python -u service.py
 ```
 
