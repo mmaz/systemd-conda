@@ -25,10 +25,10 @@ if __name__ == '__main__':
 
 Next, include the following in `~/systemd/on_start.sh`:
 
-```
+```bash
 #!/bin/bash
 source $HOME/miniconda3/etc/profile.d/conda.sh
-conda activate base
+conda activate base # change to your conda environment's name
 # -u: unbuffered output
 python -u service.py
 ```
