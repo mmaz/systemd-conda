@@ -30,7 +30,7 @@ Next, include the following in `~/systemd/on_start.sh`:
 source $HOME/miniconda3/etc/profile.d/conda.sh
 conda activate base # change to your conda environment's name
 # -u: unbuffered output
-python -u service.py
+python -u $HOME/systemd/service.py
 ```
 
 In order to run the `source` command, specifying `bash` is necessary. You might need to change this to `anaconda3` (see [here](https://github.com/conda/conda/issues/7980#issuecomment-441358406) for details). Consult [this](https://github.com/torfsen/python-systemd-tutorial#stdout-and-stderr) for details on unbuffered output.
