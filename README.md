@@ -41,7 +41,7 @@ Then `chmod +x ~/systemd/on_start.sh` and test it.
 
 In `~/.config/systemd/user/example.service`:
 
-```
+```ini
 [Unit]
 Description=Example Python Service
 
