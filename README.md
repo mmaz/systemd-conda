@@ -71,7 +71,7 @@ To run the service on boot, without requiring the user to login:
 
 `sudo loginctl enable-linger $USER`
 
-This can be undone with `sudo loginctl disable-linger $USER`, and status can be queried via [this command](https://serverfault.com/questions/846441/loginctl-enable-linger-disable-linger-but-reading-linger-status).
+This can be undone with `sudo loginctl disable-linger $USER`, and status can be queried via [this command](https://serverfault.com/questions/846441/loginctl-enable-linger-disable-linger-but-reading-linger-status): `ls /var/lib/systemd/linger`.
 
 To stop the service and prevent it from running on boot:
 
